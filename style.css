@@ -1,0 +1,26 @@
+/* General */
+body {
+    padding-top: 56px; /* Adjust based on the height of your navbar */
+}
+
+/* Hero Section */
+.hero {
+    padding: 5rem 0;
+    background: url('img/Instituto\ Emiliani\ Somascos.png') no-repeat center center;
+    background-size: cover;
+}
+
+/* Navbar */
+.navbar-nav .nav-link {
+    margin-right: 1rem;
+}
+
+/* Sections */
+section {
+    padding: 2rem 0;
+}
+
+/* Footer */
+footer {
+    background: #f8f9fa;
+}
