@@ -1,0 +1,101 @@
+/* General */
+body {
+    padding-top: 56px; /* Adjust based on the height of your navbar */
+}
+
+/* Hero Section */
+.hero {
+    padding: 5rem 0;
+    background: url('../img/Somascos.png') no-repeat center center;
+    background-size: cover;
+}
+
+/* Navbar */
+.navbar-nav .nav-link {
+    margin-right: 1rem;
+}
+
+/* Sections */
+section {
+    padding: 2rem 0;
+}
+
+/* Footer */
+footer {
+    background: #f8f9fa;
+}
+
+/*Añadir Bordes y Sombras a las Tarjetas*/
+.card {
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/*facebook resposive*/
+.fb-post {
+    max-width: 100% !important;
+    margin: 0 auto;
+  }
+
+  /* Estilos para hacer la sección de anuncios responsiva */
+  @media (max-width: 768px) {
+    .fb-post {
+      width: 100% !important;
+    }
+  }
+
+/*Cambiar el Estilo de los Textos
+Cambio de tipografía, tamaño y color:*/
+
+.card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #343a40;
+}
+
+.card-text {
+    font-size: 1rem;
+    color: #6c757d;
+}
+
+.text-body-secondary {
+    color: #868e96;
+}
+
+
+/*Añadir Efectos de Hover en el Título y Botón de Acción
+Cambiar de color cuando el usuario pase el cursor por encima*/
+
+
+.card-title:hover {
+    color: #007bff;
+    cursor: pointer;
+}
+
+.card-body {
+    text-align: center;
+}
+
+.card-body h5 {
+    margin-bottom: 1rem;
+}
+
+
+
+/*Espaciamiento Entre Tarjetas*/
+
+.card-group {
+    margin-bottom: 2rem;
+}
+
+.card {
+    margin: 0 15px;
+}
+
+
