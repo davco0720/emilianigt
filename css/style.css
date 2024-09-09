@@ -1,12 +1,40 @@
 /* General */
 body {
-    padding-top: 56px; /* Adjust based on the height of your navbar */
+    padding-top: 70px; /* Altura del nav */
+    background-color: white;
+    color: black;
+    transition: background-color 0.3s, color 0.3s; /* Transición suave */
+}
+
+/* Modo oscuro */
+body.dark-mode {
+    background-color: #000d2edb;
+    color: white;
+}
+
+.section-divider {
+    border: 0;
+    height: 1px;
+    background: #ddd; /* Color de la línea */
+    margin: 2rem 0; /* Espaciado arriba y abajo */
+}
+
+/*letras*/
+p{
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+a{
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 120; /* Aplicar Montserrat Black */
 }
 
 /* Hero Section */
 .hero {
     padding: 5rem 0;
-    background: url('../img/Somascos.png') no-repeat center center;
+    background: url('../img/1.png') no-repeat center center;
     background-size: cover;
 }
 
@@ -20,12 +48,32 @@ section {
     padding: 2rem 0;
 }
 
+.dark{
+    border: none;
+}
+
+.dark:hover{
+    background-color: black;
+    color: white;
+}
+
+
+
 /* Footer */
 footer {
     background: #f8f9fa;
+    transition: background-color 0.3s, color 0.3s; /* Transición suave */
 }
 
-/*Añadir Bordes y Sombras a las Tarjetas*/
+/* Modo oscuro */
+body.dark-mode footer {
+    background-color: #333; /* Color oscuro para el modo oscuro */
+    color: white; /* Color del texto en el footer para el modo oscuro */
+}
+
+
+
+/* Añadir Bordes y Sombras a las Tarjetas */
 .card {
     border-radius: 15px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -37,27 +85,28 @@ footer {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
-/*facebook resposive*/
+/* Facebook responsive */
 .fb-post {
     max-width: 100% !important;
     margin: 0 auto;
-  }
+}
 
-  /* Estilos para hacer la sección de anuncios responsiva */
-  @media (max-width: 768px) {
+/* Estilos para hacer la sección de anuncios responsiva */
+@media (max-width: 768px) {
     .fb-post {
-      width: 100% !important;
+        width: 100% !important;
     }
-  }
+}
 
-/*Cambiar el Estilo de los Textos
-Cambio de tipografía, tamaño y color:*/
-
+/* Cambiar el Estilo de los Textos */
 .card-title {
     font-size: 1.5rem;
     font-weight: bold;
     color: #343a40;
 }
+
+
+
 
 .card-text {
     font-size: 1rem;
@@ -68,11 +117,7 @@ Cambio de tipografía, tamaño y color:*/
     color: #868e96;
 }
 
-
-/*Añadir Efectos de Hover en el Título y Botón de Acción
-Cambiar de color cuando el usuario pase el cursor por encima*/
-
-
+/* Añadir Efectos de Hover en el Título y Botón de Acción */
 .card-title:hover {
     color: #007bff;
     cursor: pointer;
@@ -86,10 +131,7 @@ Cambiar de color cuando el usuario pase el cursor por encima*/
     margin-bottom: 1rem;
 }
 
-
-
-/*Espaciamiento Entre Tarjetas*/
-
+/* Espaciamiento Entre Tarjetas */
 .card-group {
     margin-bottom: 2rem;
 }
@@ -97,5 +139,3 @@ Cambiar de color cuando el usuario pase el cursor por encima*/
 .card {
     margin: 0 15px;
 }
-
-

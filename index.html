@@ -9,10 +9,15 @@
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
     />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!--Montserrat-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
+
   </head>
 
   <body>
-    <!-- Esto es para el facebook-->>
+    <!-- Esto es para el facebook-->
     <div id="fb-root"></div>
     <script
       async
@@ -23,8 +28,18 @@
     ></script>
 
     <!-- Barra de navegación -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="#">Instituto Emiliani Somascos</a>
+    <!-- fixed top sirve para que el nav no se mueva-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+      <a class="navbar-brand" href="index.html">
+       
+
+        <img
+          src="img/IESCentral.png"
+          alt="LogoIES"
+          href="https://www.geahub.online"
+          style="height: 90px"
+        />
+      </a>
       <button
         class="navbar-toggler"
         type="button"
@@ -53,6 +68,8 @@
           <li class="nav-item">
             <a class="nav-link" href="#anuncios">Anuncios</a>
           </li>
+
+          <button class = "dark" id="dark-mode-toggle">Modo oscuro</button>
         </ul>
       </div>
     </nav>
@@ -61,23 +78,48 @@
     <header class="hero bg-primary text-white text-center">
       <div class="container">
         <h1 class="display-4">Bienvenidos al Instituto Emiliani Somascos</h1>
-        <p class="lead">Formando técnicos exitosos.</p>
+        <p class="lead">Formando técnicos EXITOSOS.</p>
       </div>
     </header>
+
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="img/C2/1.png" class="d-block w-1" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="img/C2/2.png" class="d-block w-1" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="img/C2/3.png" class="d-block w-1" alt="...">
+        </div>
+      </div>
+    </div>
 
     <!-- Primaria -->
     <section id="primaria" class="py-5">
       <div class="container">
         <h2>Primaria</h2>
         <p>
-          <a href="https://zona5.emilianisomascos.edu.gt/"
-            >Para más información Zona 5</a
+          Descubre el emocionante mundo de la educación primaria en el Instituto
+          Emiliani Somascos, sede San Pedrito, zona 05 Ciudad de Guatemala.
+          Ofrecemos un ambiente educativo enriquecedor y estimulante para los
+          alumnos en su fase inicial de aprendizaje. Nuestro equipo docente
+          altamente capacitado está comprometido en brindar una educación de
+          calidad que desarrolle habilidades clave y siente las bases para el
+          éxito futuro de cada estudiante. Para más información visita nuestra
+          <a href="https://zona5.emilianisomascos.edu.gt/">página San Pedrito</a
           >.
         </p>
 
         <div class="card-group">
           <div class="card mb-4">
-            <img src="img/Carrusel/1.png" class="card-img-top" alt="..." />
+            <img
+              src="img/Carrusel/1.png"
+              class="card-img-top"
+              alt="..."
+              draggable="false"
+            />
             <div class="card-body">
               <h5 class="card-title">Primero, Segundo</h5>
               <p class="card-text">Compu</p>
@@ -88,7 +130,12 @@
             </div>
           </div>
           <div class="card mb-4">
-            <img src="img/Carrusel/3.png" class="card-img-top" alt="..." />
+            <img
+              src="img/Carrusel/3.png"
+              class="card-img-top"
+              alt="..."
+              draggable="false"
+            />
             <div class="card-body">
               <h5 class="card-title">Tercero, Cuarto</h5>
               <p class="card-text">Dibujo</p>
@@ -99,7 +146,12 @@
             </div>
           </div>
           <div class="card mb-4">
-            <img src="img/Carrusel/z5.png" class="card-img-top" alt="..." />
+            <img
+              src="img/Carrusel/z5.png"
+              class="card-img-top"
+              alt="..."
+              draggable="false"
+            />
             <div class="card-body">
               <h5 class="card-title">Quinto, Sexto</h5>
               <p class="card-text">Electr4i</p>
@@ -113,19 +165,45 @@
       </div>
     </section>
 
+    <!-- Separador-->
+    <hr class="section-divider" />
+
     <!-- Básicos -->
-    <section id="basicos" class="py-5 bg-light">
+    <section id="basicos" class="py-5">
       <div class="container">
         <h2>Básicos</h2>
         <p>
-          En el nivel de Básicos ofrecemos una formación integral preparando a
-          los estudiantes para los siguientes niveles educativos con énfasis en
-          valores académicos.
+          En el ciclo de Básico, ofrecemos una educación equilibrada en diversas
+          áreas del conocimiento, como Matemáticas, Lenguaje, Ciencias y
+          Estudios Sociales. Nuestro plan de estudios fortalece habilidades de
+          pensamiento crítico, resolución de problemas y comunicación efectiva,
+          asegurando que los estudiantes adquieran un conocimiento sólido.
+          <br />
+          Conocenos en nuestras 3 sedes:
+          <br />
+
+          <ul>
+            <li><a href="https://zona5.emilianisomascos.edu.gt/"
+              >San Pedrito, zona 05.</a
+            ></li>
+          <li><a
+            href="https://villahermosa1sanmiguelpetapa.emilianisomascos.edu.gt/"
+            >Villa Hermosa, San Miguel Petapa</a
+          ></li>
+          <li><a href="index.html">Mixco , Sede Central.</a></li>
+          
+          </ul>
+          
         </p>
 
         <div class="card-group">
           <div class="card mb-4">
-            <img src="img/4.png" class="card-img-top" alt="..." />
+            <img
+              src="img/4.png"
+              class="card-img-top"
+              alt="..."
+              draggable="false"
+            />
             <div class="card-body">
               <h5 class="card-title">Primero Básico</h5>
               <p class="card-text">Compu</p>
@@ -136,7 +214,12 @@
             </div>
           </div>
           <div class="card mb-4">
-            <img src="img/3.png" class="card-img-top" alt="..." />
+            <img
+              src="img/3.png"
+              class="card-img-top"
+              alt="..."
+              draggable="false"
+            />
             <div class="card-body">
               <h5 class="card-title">Segundo Básico</h5>
               <p class="card-text">Dibujo</p>
@@ -147,7 +230,12 @@
             </div>
           </div>
           <div class="card mb-4">
-            <img src="img/2.png" class="card-img-top" alt="..." />
+            <img
+              src="img/2.png"
+              class="card-img-top"
+              alt="..."
+              draggable="false"
+            />
             <div class="card-body">
               <h5 class="card-title">Tercero Básico</h5>
               <p class="card-text">Electr4i</p>
@@ -161,20 +249,44 @@
       </div>
     </section>
 
+    <!-- Separador-->
+    <hr class="section-divider" />
+
     <!-- Diversificado -->
     <section id="diversificado" class="py-5">
       <div class="container">
         <h2>Diversificado</h2>
-        <p>Ofrecemos 6 carreras en el nivel Diversificado</p>
+        <p>
+          ¡Expande tus horizontes y prepárate para una carrera exitosa con
+          nuestras carreras técnicas en el ciclo diversificado! Ofrecemos una
+          educación de calidad, que te prepara para enfrentar los desafíos del
+          mundo laboral, brindándote habilidades prácticas y conocimientos
+          especializados en campos de alta demanda.
+          Conocenos en nuestras 2 sedes:
+          <br>
+          <ul>
+            <li><a href="https://villahermosa1sanmiguelpetapa.emilianisomascos.edu.gt/">Villa Hermosa, San Miguel Petapa </a> 
+            </li>
+            <li> <a href="index.html">Mixco, Sede Central</a></li>
+          </ul>
+           
+         
+        </p>
 
         <div class="card-group">
           <div class="card mb-4">
-            <img src="img/Computacion.jpeg" class="card-img-top" alt="..." />
+            <img
+              src="img/Computacion.jpeg"
+              class="card-img-top"
+              alt="..."
+              draggable="false"
+            />
             <div class="card-body">
               <h5 class="card-title">
                 Bachillerato Industrial y Perito con especialidad en Computación
               </h5>
-              <p class="card-text">Compu</p>
+              <p class="card-text">Computación</p>
+
               <a href="#" class="btn btn-primary mt-3">Más información</a>
               <p class="card-text">
                 <small class="text-body-secondary">#SomosSomascos</small>
@@ -186,6 +298,7 @@
               src="https://emilianisomascos.edu.gt/sede_central/recurso/carreras/construccion.JPEG"
               class="card-img-top"
               alt="..."
+              draggable="false"
             />
             <div class="card-body">
               <h5 class="card-title">
@@ -203,6 +316,7 @@
               src="https://emilianisomascos.edu.gt/sede_central/recurso/carreras/electricidad.JPEG"
               class="card-img-top"
               alt="..."
+              draggable="false"
             />
             <div class="card-body">
               <h5 class="card-title">Perito en Electricidad Industrial</h5>
@@ -221,6 +335,7 @@
               src="https://emilianisomascos.edu.gt/sede_central/recurso/carreras/mecanica.JPEG"
               class="card-img-top"
               alt="..."
+              draggable="false"
             />
             <div class="card-body">
               <h5 class="card-title">
@@ -238,6 +353,7 @@
               src="https://emilianisomascos.edu.gt/sede_central/recurso/carreras/tecnicas.JPEG"
               class="card-img-top"
               alt="..."
+              draggable="false"
             />
             <div class="card-body">
               <h5 class="card-title">
@@ -255,6 +371,7 @@
               src="https://emilianisomascos.edu.gt/sede_central/recurso/carreras/ccll.JPEG"
               class="card-img-top"
               alt="..."
+              draggable="false"
             />
             <div class="card-body">
               <h5 class="card-title">Bachillerato en Ciencias y Letras</h5>
@@ -269,27 +386,32 @@
       </div>
     </section>
 
+    <!-- Separador-->
+    <hr class="section-divider" />
+
     <!-- Blog -->
-    <section id="blog" class="py-5 bg-light">
+    <section id="blog" class="py-5">
+      <!--bg-light sirve para poner un color como gris para ir separando secciones-->
       <div class="container">
         <h2>Blog</h2>
         <p>
           Aquí encontrarás noticias y artículos sobre las actividades y eventos
           del instituto.
         </p>
-        
+
         <div class="card-group">
           <div class="card mb-4">
             <img
-              src="https://emilianisomascos.edu.gt/sede_central/recurso/carreras/mecanica.JPEG"
+              src="https://d3t3ozftmdmh3i.cloudfront.net/production/podcast_uploaded/159156/159156-1657598357439-00abaaa744c16.jpg"
               class="card-img-top"
               alt="..."
+              draggable="false"
             />
             <div class="card-body">
               <h5 class="card-title">
-               ¿Cómo concentrarse en plena era tecnológica?
+                Podcast | Toma de decisiones
               </h5>
-              <p class="card-text">Meca</p>
+              <p class="card-text">Franco Urbina</p>
               <a href="#" class="btn btn-primary mt-3">Más información</a>
               <p class="card-text">
                 <small class="text-body-secondary">#SomosSomascos</small>
@@ -298,15 +420,14 @@
           </div>
           <div class="card mb-4">
             <img
-              src="https://emilianisomascos.edu.gt/sede_central/recurso/carreras/tecnicas.JPEG"
+              src="https://edit.org/img/blog/5pu-plantilla-podcast-portadas-micro-editar-editor.webp"
               class="card-img-top"
               alt="..."
+              draggable="false"
             />
             <div class="card-body">
-              <h5 class="card-title">
-                ¿Cómo ser un buen técnico?
-              </h5>
-              <p class="card-text">Electro</p>
+              <h5 class="card-title">Podcast | Redes Sociales</h5>
+              <p class="card-text">Radio Emiliani</p>
               <a href="#" class="btn btn-primary mt-3">Más información</a>
               <p class="card-text">
                 <small class="text-body-secondary">#SomosSomascos</small>
@@ -315,13 +436,14 @@
           </div>
           <div class="card mb-4">
             <img
-              src="https://emilianisomascos.edu.gt/sede_central/recurso/carreras/ccll.JPEG"
+              src="https://marketplace.canva.com/EAFZR0CrBKU/1/0/1600w/canva-portada-para-podcast-emprender-ilustrado-naranja-U2k3xpDwEEo.jpg"
               class="card-img-top"
               alt="..."
+              draggable="false"
             />
             <div class="card-body">
-              <h5 class="card-title">Entrevista | ing. Dilan Suy</h5>
-              <p class="card-text">CCLL</p>
+              <h5 class="card-title">Podcast | Aprendiendo a Emprender</h5>
+              <p class="card-text">Ing. Dilan Suy</p>
               <a href="#" class="btn btn-primary mt-3">Más información</a>
               <p class="card-text">
                 <small class="text-body-secondary">#SomosSomascos</small>
@@ -332,6 +454,9 @@
         <!--  -->
       </div>
     </section>
+
+    <!-- Separador-->
+    <hr class="section-divider" />
 
     <!-- Anuncios -->
     <section id="anuncios" class="py-5">
@@ -360,9 +485,56 @@
       </div>
     </section>
 
+    <!-- Separador-->
+    <hr class="section-divider" />
+
     <!-- Footer -->
-    <footer class="bg-light text-center py-3">
+    <footer class="text-center py-3">
       <div class="container">
+
+        <div class="row">
+          <!-- Información de contacto -->
+          <div class="col-md-4">
+              <h5>Contacto</h5>
+              <ul class="list-unstyled">
+                  <li><i class="fas fa-map-marker-alt"></i> Dirección: Calz. San Juan 2-30, Cdad. de Guatemala</li>
+                  <li><i class="fas fa-phone"></i> Teléfono: (502) 2431 0521</li>
+                  <li><i class="fas fa-envelope"></i> Email: coordinacion@emilianisomascos.edu.gt</li>
+              </ul>
+          </div>
+
+          <!-- Enlaces rápidos -->
+          <div class="col-md-4">
+              <h5>Enlaces Rápidos</h5>
+              <ul class="list-unstyled">
+                  <li><a href="#primaria">Primaria</a></li>
+                  <li><a href="#basicos">Básicos</a></li>
+                  <li><a href="#diversificado">Diversificado</a></li>
+                  <li><a href="#blog">Blog</a></li>
+                  <li><a href="#anuncios">Anuncios</a></li>
+              </ul>
+          </div>
+
+          <!-- Redes sociales -->
+          <div class="col-md-4">
+              <h5>Síguenos</h5>
+              <ul class="list-unstyled d-flex">
+                  <li class="me-3">
+                      <a href="https://www.facebook.com/" target="_blank" class="text-dark">
+                          <i class="fab fa-facebook-f"></i>
+                      </a>
+                  </li>
+                  /IES.gt 
+                  <li class="me-3">
+                      <a href="https://www.instagram.com/" target="_blank" class="text-dark">
+                          <i class="fab fa-instagram"></i>
+                      </a>
+                  </li>
+                  /IES.gt 
+              </ul>
+          </div>
+      </div>
+
         <p>
           &copy; 2024 Instituto Emiliani Somascos. Todos los derechos
           reservados.
