@@ -9,7 +9,6 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-
 /*Agregar o quitar la clase de modo oscuro cuando se presiona el boton*/
 const toggleButton = document.getElementById('dark-mode-toggle');
 const body = document.body;
@@ -32,11 +31,6 @@ toggleButton.addEventListener('click', function () {
     toggleButton.textContent = 'Modo oscuro';
   }
 });
-
-
-
-
-
 
 const myCarouselElement = document.querySelector('#carouselExampleSlidesOnly')
 
