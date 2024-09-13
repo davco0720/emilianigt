@@ -31,12 +31,12 @@ a{
     font-weight: 120; /* Aplicar Montserrat Black */
 }
 
-/* Hero Section
+/* Hero Section */
 .hero {
     padding: 5rem 0;
     background: url('../img/1.png') no-repeat center center;
     background-size: cover;
-} */
+}
 
 /* Navbar */
 .navbar-nav .nav-link {
