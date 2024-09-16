@@ -1,9 +1,38 @@
 /* General */
 body {
-    padding-top: 70px; /* Altura del nav */
+    padding-top: 70px;
+    /* Altura del nav */
     background-color: white;
     color: black;
-    transition: background-color 0.3s, color 0.3s; /* Transición suave */
+    transition: background-color 0.3s, color 0.3s;
+    /* Transición suave */
+}
+
+.navbar-brand {
+    margin-left: 20px;
+    /* Empuja el logo hacia la derecha */
+}
+
+
+.nav-item{
+    font-size: 18px;
+}
+
+.dropdown-item{
+    font-size: 17px;
+}
+
+#navbarDropdown{
+    font-size: 20px;
+}
+
+.navbar-toggler {
+    margin-left: auto;
+    /* Alinea el botón de colapso a la derecha en pantallas pequeñas */
+}
+
+#navbarDropdown {
+    font-size: 16px;
 }
 
 /* Modo oscuro */
@@ -12,23 +41,30 @@ body.dark-mode {
     color: white;
 }
 
+#NAB{
+    color: black;
+}
+
 .section-divider {
     border: 0;
     height: 1px;
-    background: #ddd; /* Color de la línea */
-    margin: 2rem 0; /* Espaciado arriba y abajo */
+    background: #ddd;
+    /* Color de la línea */
+    margin: 2rem 0;
+    /* Espaciado arriba y abajo */
 }
 
 /*letras*/
-p{
+p {
     font-size: 20px;
     font-family: 'Montserrat', sans-serif;
 }
 
-a{
+a {
     font-size: 20px;
     font-family: 'Montserrat', sans-serif;
-    font-weight: 120; /* Aplicar Montserrat Black */
+    font-weight: 120;
+    /* Aplicar Montserrat Black */
 }
 
 /* Hero Section */
@@ -48,11 +84,11 @@ section {
     padding: 2rem 0;
 }
 
-.dark{
+.dark {
     border: none;
 }
 
-.dark:hover{
+.dark:hover {
     background-color: black;
     color: white;
 }
@@ -62,16 +98,21 @@ section {
 /* Footer */
 footer {
     background: #f8f9fa;
-    transition: background-color 0.3s, color 0.3s; /* Transición suave */
+    transition: background-color 0.3s, color 0.3s;
+    /* Transición suave */
 }
 
 /* Modo oscuro */
 body.dark-mode footer {
-    background-color: #333; /* Color oscuro para el modo oscuro */
-    color: white; /* Color del texto en el footer para el modo oscuro */
+    background-color: #333;
+    /* Color oscuro para el modo oscuro */
+    color: white;
+    /* Color del texto en el footer para el modo oscuro */
 }
 
-
+.dark{
+    border-radius: 8%;
+}
 
 /* Añadir Bordes y Sombras a las Tarjetas */
 .card {
