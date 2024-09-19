@@ -14,14 +14,14 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
-
+  <script src="../js/index.js"></script>
 </head>
 
 <body>
-   <!-- Barra de navegación -->
+  <!-- Barra de navegación -->
   <!-- fixed top sirve para que el nav no se mueva-->
   <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-    <a class="navbar-brand" href="index.html">
+    <a class="navbar-brand" href="../../../index.html">
       <img src="../img/IESCentral.png" alt="LogoIES" href="https://www.geahub.online" style="height: 90px" />
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
@@ -31,25 +31,26 @@
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link" href="index.html#primaria">Primaria</a>
+          <a class="nav-link" href="../../../index.html#Primaria">Primaria</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="index.html#basicos">Básicos</a>
+          <a class="nav-link" href="../../../index.html#Basicos">Básicos</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="index.html#diversificado">Diversificado</a>
+          <a class="nav-link" href="../../../index.html#Diversificado">Diversificado</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="index.html#blog">Blog</a>
+          <a class="nav-link" href="../../../index.html#Blog">Blog</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="index.html#anuncios">Anuncios</a>
+          <a class="nav-link" href="../../../index.html#Anuncios">Anuncios</a>
         </li>
-        
-        
+
+
         <!-- Dropdown -->
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+            aria-expanded="false">
             Administración
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -57,8 +58,10 @@
             <li><a class="dropdown-item" href="VisualizarDocentes.html">Visualizar Docentes</a></li>
             <li><a class="dropdown-item" href="AggAlumnos.html">Agregar Alumno</a></li>
             <li><a class="dropdown-item" href="VisualizarAlumnos.html">Visualizar Alumnos</a></li>
-            <li><hr class="dropdown-divider"></li> <!--Separador-->
-            <li><a class="dropdown-item" href="somascos.html">#SomosSomascos</a></li>
+            <li>
+              <hr class="dropdown-divider">
+            </li> <!--Separador-->
+            <li><a class="dropdown-item" href="/Frontend/assets/html/somascos.html">#SomosSomascos</a></li>
           </ul>
         </li>
 
@@ -68,68 +71,69 @@
     </div>
   </nav>
 
-    <!-- Saludo -->
-    <header class="hero bg-primary text-white text-center">
-        <div class="container">
-            <h1 class="display-4">Bienvenid@ al editor de Docentes</h1>
-            <p class="lead">Formando técnicos EXITOSOS.</p>
-        </div>
-    </header>
-
-    <br>
-    <br>
-
-
-
-    <div class="container mt-5">
-        <h2 class="mb-4">Formulario de Registro</h2>
-        <form>
-            <div class="mb-3">
-                <label for="nombre" class="form-label">Nombre</label>
-                <input type="text" class="form-control" id="nombre" placeholder="Ingresa tu nombre" required />
-            </div>
-            <div class="mb-3">
-                <label for="apellido" class="form-label">Apellido</label>
-                <input type="text" class="form-control" id="apellido" placeholder="Ingresa tu apellido" required />
-            </div>
-            <div class="mb-3">
-                <label for="curso" class="form-label">Curso</label>
-                <input type="text" class="form-control" id="curso" placeholder="Ingresa el curso" required />
-            </div>
-            <div class="mb-3">
-                <label for="carnet" class="form-label">Carnet</label>
-                <input type="text" class="form-control" id="carnet" placeholder="Ingresa tu carnet" required />
-            </div>
-            <div class="mb-3">
-                <label for="especialidad" class="form-label">Especialidad</label>
-                <input type="text" class="form-control" id="especialidad" placeholder="Ingresa tu especialidad" required />
-            </div>
-            <div class="mb-3">
-                <label for="edad" class="form-label">Edad</label>
-                <input type="number" class="form-control" id="edad" placeholder="Ingresa tu edad" required />
-            </div>
-            <div class="mb-3">
-                <label for="correo" class="form-label">Correo Electrónico</label>
-                <input type="email" class="form-control" id="correo" placeholder="Ingresa tu correo electrónico" required />
-            </div>
-            <button type="submit" class="btn btn-primary">Registrar</button>
-        </form>
+  <!-- Saludo -->
+  <header class="hero bg-primary text-white text-center">
+    <div class="container">
+      <h1 class="display-4">Bienvenid@ al editor de Docentes</h1>
+      <p class="lead">Formando técnicos EXITOSOS.</p>
     </div>
+  </header>
 
-    <footer>
-      <div>
-    <p>
-      &copy; 2024 Instituto Emiliani Somascos. Todos los derechos
-      reservados.
-    </p>
+  <br>
+  <br>
+
+
+
+  <div class="container mt-5">
+    <h2 class="mb-4">Formulario de Registro</h2>
+    <form>
+      <div class="mb-3">
+        <label for="nombre" class="form-label">Nombre</label>
+        <input type="text" class="form-control" id="nombre" placeholder="Ingresa tu nombre" required />
+      </div>
+      <div class="mb-3">
+        <label for="apellido" class="form-label">Apellido</label>
+        <input type="text" class="form-control" id="apellido" placeholder="Ingresa tu apellido" required />
+      </div>
+      <div class="mb-3">
+        <label for="curso" class="form-label">Curso</label>
+        <input type="text" class="form-control" id="curso" placeholder="Ingresa el curso" required />
+      </div>
+      <div class="mb-3">
+        <label for="carnet" class="form-label">Carnet</label>
+        <input type="text" class="form-control" id="carnet" placeholder="Ingresa tu carnet" required />
+      </div>
+      <div class="mb-3">
+        <label for="especialidad" class="form-label">Especialidad</label>
+        <input type="text" class="form-control" id="especialidad" placeholder="Ingresa tu especialidad" required />
+      </div>
+      <div class="mb-3">
+        <label for="edad" class="form-label">Edad</label>
+        <input type="number" class="form-control" id="edad" placeholder="Ingresa tu edad" required />
+      </div>
+      <div class="mb-3">
+        <label for="correo" class="form-label">Correo Electrónico</label>
+        <input type="email" class="form-control" id="correo" placeholder="Ingresa tu correo electrónico" required />
+      </div>
+      <button onclick="addDocente()" type="submit" class="btn btn-primary">Registrar</button>
+    </form>
   </div>
+
+  <footer>
+    <div>
+      <p>
+        &copy; 2024 Instituto Emiliani Somascos. Todos los derechos
+        reservados.
+      </p>
+    </div>
   </footer>
 
-  
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script src="../js/script.js"></script>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="../js/script.js"></script>
+  <script src="../js/index.js"></script>
 </body>
 
 </html>

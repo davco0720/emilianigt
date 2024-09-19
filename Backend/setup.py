@@ -23,7 +23,7 @@ class setup:
 
 
     def addEstudiante(self, estudianteX):
-        if self.verificarEstudiante == False:
+        if not self.VerificarEstudiante(estudianteX):
             #Agregar estudiante
             self.estudiantes.append(estudianteX)
             print("Estudiante agregado ("+estudianteX.carnet+")")
@@ -34,9 +34,9 @@ class setup:
             return False
 
     def addDocente(self, docenteX):
-        if self.VerificarDocente == False:
+        if not self.VerficarDocente(docenteX):
             #Agregar Docente
-            self.estudiantes.append(docenteX)
+            self.docentes.append(docenteX)
             print ("Docente Agregado ("+docenteX.carnet+")")
             return True
         else:
@@ -56,10 +56,10 @@ class setup:
                 return True
         return False
 
-    def getEstudiate(self):
+    def getEstudiantes(self):
         #retornar todos los elementos
         return json.dumps([ob.__dict__ for ob in self.estudiantes])
 
-    def getDocente(self):
+    def getDocentes(self):
         #retornar todos los elementos
         return json.dumps([ob2.__dict__ for ob2 in self.docentes])

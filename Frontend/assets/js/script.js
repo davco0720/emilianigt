@@ -1,3 +1,4 @@
+
 //     Desplazamiento de la pagina cuando se presiona el nav
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   anchor.addEventListener('click', function (e) {
@@ -12,37 +13,6 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 /*Agregar o quitar la clase de modo oscuro cuando se presiona el boton*/
 const toggleButton = document.getElementById('dark-mode-toggle');
 const body = document.body;
-
-
-const toggleButton2 = document.getElementById('boton1');
-
-// Obtén el modal
-var modal = document.getElementById("myModal");
-
-// Obtén el botón que abre el modal
-var btn = document.getElementById("openModal");
-
-// Obtén el <span> que cierra el modal
-var span = document.getElementsByClassName("close")[0];
-
-// Cuando el usuario haga clic en el botón, abre el modal 
-btn.onclick = function() {
-    modal.style.display = "block";
-}
-
-// Cuando el usuario haga clic en <span> (x), cierra el modal
-span.onclick = function() {
-    modal.style.display = "none";
-}
-
-// Cuando el usuario haga clic fuera del modal, cierra el modal
-window.onclick = function(event) {
-    if (event.target == modal) {
-        modal.style.display = "none";
-    }
-}
-
-
 
 // Verificar si el usuario ya tiene una preferencia guardada
 if (localStorage.getItem('theme') === 'dark') {
@@ -67,8 +37,8 @@ toggleButton.addEventListener('click', function () {
 const myCarouselElement = document.querySelector('#carouselExampleSlidesOnly')
 
 const carousel = new bootstrap.Carousel(myCarouselElement, {
-  interval: 3000,
-  touch: false
+  interval: 5000,
+  touch: true
 })
 
 
@@ -91,3 +61,4 @@ const carousel = new bootstrap.Carousel(myCarouselElement, {
       }, false)
     })
   })()
+

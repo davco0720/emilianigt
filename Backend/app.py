@@ -31,11 +31,20 @@ def Alumno():
 @app.route('/addEstudiante', methods=['POST'])
 def addEstudiante():
     datoEstudiante = request.json
-    nuevoEstudiante = estudiante(datoEstudiante['nombre:'], datoEstudiante['apellido'], datoEstudiante['carnet'], datoEstudiante['grado'], datoEstudiante['especialidad'], datoEstudiante['edad'], datoEstudiante['correo'])
-    if manager.addEstudiante(nuevoEstudiante) == True:
-        return '{"estado: Estudiante Agregado"}'
+    nuevoEstudiante = estudiante(
+        datoEstudiante['nombre'], 
+        datoEstudiante['apellido'], 
+        datoEstudiante['carnet'], 
+        datoEstudiante['grado'], 
+        datoEstudiante['especialidad'], 
+        datoEstudiante['edad'], 
+        datoEstudiante['correo']
+    )
+    if manager.addEstudiante(nuevoEstudiante):
+        return jsonify({"estado": "Estudiante Agregado"}), 201
     else:
-        return '{"estado: ERROR, el estudiante ya EXISTE"}'
+        return jsonify({"estado": "ERROR, el estudiante ya EXISTE"}), 400
+
  
 @app.route('/addDocente', methods=['POST'])
 def addDocente():
@@ -48,11 +57,11 @@ def addDocente():
 
 @app.route('/getEstudiantes')
 def getEstudiantes():
-    return manager.getEstudiate()
+    return manager.getEstudiantes()
 
 @app.route('/getDocentes')
-def getDocetes():
-    return manager.getDocente()
+def getDocentes():
+    return manager.getDocentes()
 
 #Ejecuta el codigo de la API
 if __name__ == '__main__':
