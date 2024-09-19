@@ -46,9 +46,14 @@ def addDocente():
     else:
         return '{"estado: ERROR, el docente ya EXISTE"}'
 
+@app.route('/getEstudiantes')
+def getEstudiantes():
+    return manager.getEstudiate()
+
+@app.route('/getDocentes')
+def getDocetes():
+    return manager.getDocente()
+
 #Ejecuta el codigo de la API
 if __name__ == '__main__':
     app.run(port=5000,debug=True)
-
-
-    

@@ -4,6 +4,7 @@
 from estudiante import estudiante
 #  nombre de archivo     nombre de la clase
 from docentes import Docente
+import json
 
 #DATO QUEMADO -> dato que va a quedar escrito en el codigo (predeterminado)
 
@@ -19,7 +20,8 @@ class setup:
         self.estudiantes.append(estudiante("202401194", "Estudiante", "Modelo", "5to.", "Computacion", 17, "estudiante@emilianisomascos.edu.gt"))
         self.docentes.append(Docente("Docente", "Modelo", "MATEMATICAS", "202410698", "cOMPUTACION", 29, "docente@emilianisomascos.edu.gt" ))
 
-    
+
+
     def addEstudiante(self, estudianteX):
         if self.verificarEstudiante == False:
             #Agregar estudiante
@@ -30,7 +32,6 @@ class setup:
             # ERROR, ya hay un estudiante cn este carnet
             print ("Este Carnet ya está registrado")
             return False
-
 
     def addDocente(self, docenteX):
         if self.VerificarDocente == False:
@@ -43,7 +44,6 @@ class setup:
             print("Este carnet ya esta registrado")
             return False
             
-
     def VerificarEstudiante(self, estudianteX):
         for i in self.estudiantes:
             if i.carnet == estudianteX.carnet:
@@ -56,3 +56,10 @@ class setup:
                 return True
         return False
 
+    def getEstudiate(self):
+        #retornar todos los elementos
+        return json.dumps([ob.__dict__ for ob in self.estudiantes])
+
+    def getDocente(self):
+        #retornar todos los elementos
+        return json.dumps([ob2.__dict__ for ob2 in self.docentes])
